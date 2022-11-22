@@ -18,7 +18,7 @@ public class CharAddEncryptUtil {
         System.out.println("same as original text: " + text.equals(decrypted));
     }
 
-    static String encrypt(String text, String key) {
+    public static String encrypt(String text, String key) {
         StringBuilder encrypt = new StringBuilder();
         int index = 0;
         int len = key.length();
@@ -30,7 +30,7 @@ public class CharAddEncryptUtil {
         return base64.substring(base64.length() - len) + base64.substring(0, base64.length() - len);
     }
 
-    static String decrypt(String encryptedText, String key) {
+    public static String decrypt(String encryptedText, String key) {
         StringBuilder decrypt = new StringBuilder();
         int index = 0;
         int len = key.length();
