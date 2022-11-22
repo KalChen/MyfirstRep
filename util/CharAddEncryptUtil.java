@@ -8,7 +8,7 @@ import java.util.Base64;
  */
 public class CharAddEncryptUtil {
 
-   public static void main(String[] args) {
+   	public static void main(String[] args) {
 		String key = UUID.randomUUID().toString().replaceAll("-", "");
 		String text = "Hello World";
 		String encrypted = encrypt(text, key);
